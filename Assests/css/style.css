@@ -144,8 +144,8 @@ h1 {
 
 .hero .customers-badge {
     position: absolute;
-    bottom: 301px;
-    right: 199px;
+    bottom: 3px;
+    right: 85px;
     background-color: white;
     padding: 1rem;
     border-radius: 10px;
