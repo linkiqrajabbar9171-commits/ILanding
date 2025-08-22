@@ -684,27 +684,413 @@ ul {
     color: color-mix(in srgb, var(--default-color), transparent 20%);
     margin: 0;
 }
+
 .testimonials .testimonial-item .stars {
     margin: 10px 0;
 }
+
 .testimonials .testimonial-item .stars i {
     color: #ffc107;
     margin: 0 1px;
 }
+
 .testimonials .testimonial-item p {
     font-style: italic;
     margin: 15px 0 0 0;
     padding: 0;
 }
+
 .testimonials .testimonial-item p i {
     display: inline-block;
     color: #20a5f8;
     font-size: 20px;
-   
+
 }
 
+.stats .stats-item {
+    padding: 30px;
+}
 
+.stats .stats-item span {
+    color: var(--heading-color);
+    font-size: 48px;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: var(--default-font);
+}
 
+.stats .stats-item span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.stats .stats-item p {
+    color:
+        color-mix(in srgb, var(--default-color), transparent 40%);
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 500;
+}
+
+.services .service-card {
+    height: 100%;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.services .service-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+#services {
+    background-color: #f3f9ff;
+}
+
+.services .service-card .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    background:
+        color-mix(in srgb, var(--accent-color), transparent 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--accent-color);
+    font-size: 28px;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.services .service-card:hover .icon {
+    background: var(--accent-color);
+    color: white;
+}
+
+.services .service-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+    font-family: var(--default-font);
+}
+
+.services .service-card p {
+    margin-bottom: 25px;
+    color:
+        color-mix(in srgb, var(--default-color), transparent 25%);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.services .service-card .read-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.services .read-more:hover {
+    color:
+        color-mix(in srgb, var(--accent-color), transparent 25%);
+    gap: 10px;
+}
+
+.services .service-card .read-more i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    margin-top: 4px;
+}
+
+.pricing .pricing-card {
+    height: 100%;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pricing .pricing-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing .pricing-card h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: var(--heading-color);
+    font-family: var(--default-font);
+}
+
+.pricing .pricing-card .price {
+    margin-bottom: 24px;
+}
+
+.pricing .pricing-card .price .currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    vertical-align: top;
+    line-height: 1;
+}
+
+.pricing .pricing-card .price .amount {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.pricing .pricing-card .price .period {
+    font-size: 1rem;
+    color:
+        color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.pricing .pricing-card .description {
+    margin-bottom: 32px;
+    font-size: 15.6px;
+}
+
+.pricing .pricing-card h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: var(--heading-color);
+}
+
+.pricing .pricing-card .features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.pricing .pricing-card .features-list li i {
+    color: var(--accent-color);
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.pricing .pricing-card .btn.btn-primary {
+    background: var(--accent-color);
+    border: none;
+    color: white;
+}
+
+.pricing .pricing-card .btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.pricing .pricing-card .btn.btn-primary:hover {
+    background:
+        color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.pricing .pricing-card.popular {
+    background: var(--accent-color);
+    color: white;
+}
+
+.pricing .pricing-card .popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pricing .pricing-card.popular h3,
+.pricing .pricing-card.popular h4 {
+    color: white;
+}
+
+.pricing .pricing-card.popular .price .period {
+    color: white;
+}
+
+.pricing .pricing-card.popular .features-list li i {
+    color: white;
+}
+
+.pricing .pricing-card.popular .btn-light {
+    background: white;
+    color: var(--accent-color);
+}
+
+.pricing .pricing-card.popular .btn-light:hover {
+    background:
+        color-mix(in srgb, white, transparent 10%);
+}
+
+#call {
+    background-color: var(--accent-color);
+    padding: 60px 0px;
+
+}
+
+#call .section-headin,
+.section-intr {
+    color: white;
+
+}
+
+#call .section-headin {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+}
+
+#call .section-intr {
+    text-align: center;
+
+}
+
+#call .section-intro {
+    margin-bottom: 20px;
+}
+
+#call a {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid color-mix(in srgb, white, transparent 30%);
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.info-box {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 48px;
+    border-radius: 16px;
+    height: 100%;
+}
+
+.contact .info-box h3 {
+    font-family: var(--default-font);
+    font-size: 32px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.contact .info-box p {
+    opacity: 0.8;
+    margin-bottom: 32px;
+}
+
+.contact .info-item {
+    margin-bottom: 20px;
+}
+
+.contact .info-item .icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color:
+        color-mix(in srgb, white, transparent 85%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+
+}
+
+.contact .info-item .icon-box i {
+    font-size: 24px;
+}
+
+.contact .info-item .content h4 {
+    
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contact .info-item .content p {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 48px;
+    border-radius: 16px;
+}
+
+.contact .contact-form h3 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+    font-family: var(--default-font);
+    font-weight: 400;
+}
+
+.contact .contact-form p {
+    color:
+        color-mix(in srgb, var(--default-color), transparent 25%);
+    margin-bottom: 2rem;
+}
+
+.contact .contact-form .form-control,
+.contact .contact-form .form-select {
+    padding: 0.875rem 1.25rem;
+    border-color:
+        color-mix(in srgb, var(--default-color), transparent 90%);
+    border-radius: 0.5rem;
+    background-color:
+        color-mix(in srgb, white 90%, white 5%);
+    color: var(--default-color);
+}
+
+.contact .contact-form .btn {
+    background-color: var(--accent-color);
+    color:white;
+    padding: 16px 32px;
+    border-radius: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+   
+}
 
 
 
