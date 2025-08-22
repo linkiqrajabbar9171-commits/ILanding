@@ -1091,7 +1091,124 @@ a {
     gap: 8px;
    
 }
+.footer{
+    padding-top: 50px;
+}
+.footer .sitename {
+    font-size: 22px;
+    color: var(--heading-color);
+    font-family: var(--default-font);
+    font-weight: 600;
+}
 
+.footer-contact {
+    font-size: 14px;
+}
+
+.footer-links .siz {
+    font-size: 15px;
+    color: var(--heading-color);
+    font-family: var(--default-font);
+    font-weight: 500;
+}
+
+.footer-links ul {
+    padding-left: 1px;
+}
+
+.footer-links ul li a {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.footer-links ul li a:hover {
+    color: var(--accent-color);
+}
+
+.footer .lower-icons .color {
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    padding: 11px;
+}
+
+.footer .lower-icons .color:hover {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.final p,
+h4 {
+    margin-bottom: 0px;
+}
+
+.final {
+    padding: 30px 0px;
+    border-top: 1px solid rgb(231, 231, 231);
+    width: 1120px;
+    margin: 0px auto;
+    color: #444444;
+}
+
+.final .first-line .small-heading {
+    font-size: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.final .first-line {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.final .sec {
+    font-size: 13px;
+}
+
+.first-line a {
+    color: var(--accent-color);
+}
+#footer{
+    padding-bottom: 0px;
+}
+ .faq-arrow {
+    color: var(--accent-color);
+}
+.question h2{
+    color: var(--heading-color);
+    font-family: var(--default-font);
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.question p{
+    color: var(--default-color);
+    margin-bottom: 32px;
+
+}
+.accordion-header button:hover{
+   color: var(--accent-color);
+}
+.accordion-item{
+    padding: 8px 0px;
+    border: none;
+    border-radius: 10px !important;
+    margin-bottom: 15px;
+}
+.accordion-button:not(.collapsed){
+    background-color: white !important;
+    box-shadow: none;
+    color: var(--accent-color);
+
+}
+.accordion{
+   --bs-accordion-btn-focus-box-shadow:0 0 0 0;
+}
 
 
 
